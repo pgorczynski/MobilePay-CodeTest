@@ -8,20 +8,10 @@
     /// </summary>
     public class LogLine
     {
-        #region Private Fields
-
-        #endregion
-
-        #region Constructors
-
         public LogLine()
         {
-            this.Text = "";
+            Text = "";
         }
-
-        #endregion
-
-        #region Public Methods
 
         /// <summary>
         /// Return a formatted line
@@ -31,13 +21,13 @@
         {
             StringBuilder sb = new StringBuilder();
 
-            if (this.Text.Length > 0)
+            if (Text.Length > 0)
             {
-                sb.Append(this.Text);
+                sb.Append(Text);
                 sb.Append(". ");
             }
 
-            sb.Append(this.CreateLineText());
+            sb.Append(CreateLineText());
 
             return sb.ToString();
         }
@@ -46,23 +36,15 @@
         {
             return "";
         }
-
-
-        #endregion
-
-        #region Properties
-
+        
         /// <summary>
         /// The text to be display in logline
         /// </summary>
         public string Text { get; set; }
 
         /// <summary>
-        /// The Timestamp is initialized when the log is added. Th
+        /// The Timestamp is initialized when the log is added.
         /// </summary>
         public virtual DateTime Timestamp { get; set; }
-  
-
-        #endregion
     }
 }

@@ -40,7 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationTime.cs" />
     <Compile Include="AsyncLog.cs" />
+    <Compile Include="FileWriter.cs" />
+    <Compile Include="IFileWriter.cs" />
     <Compile Include="ILog.cs" />
     <Compile Include="LogLine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
